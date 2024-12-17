@@ -1,6 +1,5 @@
-package com.eatapp.hmw4
+package com.eatapp.hmw4.screens
 
-import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -17,7 +16,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 
 @Composable
-fun SayfaY(navController: NavHostController) {
+fun SayfaA(navController: NavHostController) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -25,13 +24,10 @@ fun SayfaY(navController: NavHostController) {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text("Sayfa Y", fontSize = 24.sp)
+        Text("Sayfa A", fontSize = 24.sp)
         Spacer(modifier = Modifier.height(32.dp))
-        Text("Geri tuşuna basınız", fontSize = 16.sp)
-    }
-
-    // Handle back press to navigate directly to Anasayfa
-    BackHandler {
-        navController.popBackStack("anasayfa", inclusive = false)
+        Button(onClick = { navController.navigate("sayfaB") }) {
+            Text("GİT > B")
+        }
     }
 }

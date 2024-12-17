@@ -1,4 +1,4 @@
-package com.eatapp.hmw4
+package com.eatapp.hmw4.screens
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

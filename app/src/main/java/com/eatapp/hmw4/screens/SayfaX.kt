@@ -1,4 +1,4 @@
-package com.eatapp.hmw4
+package com.eatapp.hmw4.screens
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -15,10 +15,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 
-//SAYFA A
-
 @Composable
-fun SayfaA(navController: NavHostController) {
+fun SayfaX(navController: NavHostController) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -26,10 +24,10 @@ fun SayfaA(navController: NavHostController) {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text("Sayfa A", fontSize = 24.sp)
+        Text("Sayfa X", fontSize = 24.sp)
         Spacer(modifier = Modifier.height(32.dp))
-        Button(onClick = { navController.navigate("sayfaB") }) {
-            Text("GİT > B")
+        Button(onClick = { navController.navigate("sayfaY") }) {
+            Text("GİT > Y")
         }
     }
 }

@@ -1,15 +1,12 @@
 package com.eatapp.hmw4
 
-import androidx.activity.compose.BackHandler
-import androidx.compose.foundation.layout.*
-import androidx.compose.material3.*
 import androidx.compose.runtime.*
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
-import androidx.navigation.NavHostController
 import androidx.navigation.compose.*
+import com.eatapp.hmw4.screens.Anasayfa
+import com.eatapp.hmw4.screens.SayfaA
+import com.eatapp.hmw4.screens.SayfaB
+import com.eatapp.hmw4.screens.SayfaX
+import com.eatapp.hmw4.screens.SayfaY
 
 @Composable
 fun MyApp() {
